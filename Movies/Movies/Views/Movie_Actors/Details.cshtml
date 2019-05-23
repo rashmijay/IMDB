@@ -1,0 +1,35 @@
+﻿@model Movies.Models.Movie_Actors
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Movie_Actors</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Actor.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Actor.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Movy.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Movy.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
