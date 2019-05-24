@@ -10,6 +10,10 @@ Instructions
 •	Import the file script.sql
 
 
+
+
+
+
 2.	Setup the solutions
 
 •	Download Visual Studio
